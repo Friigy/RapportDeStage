@@ -1,0 +1,90 @@
+\documentclass[12pt]{report}
+%\usepackage[12pt]{extsizes}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+%====================== PACKAGES ======================
+
+\usepackage[french]{babel}
+\usepackage[utf8x]{inputenc}
+%sommaire
+\usepackage{shorttoc}
+%pour gérer les positionnement d'images
+\usepackage{float}
+\usepackage[cm]{fullpage}
+\usepackage{amsmath}
+\usepackage{watermark}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{url}
+%pour les informations sur un document compilé en PDF et les liens externes / internes
+\usepackage{hyperref}
+%pour la mise en page des tableaux
+\usepackage{array}
+\usepackage{tabularx}
+%pour utiliser \floatbarrier
+%\usepackage{placeins}
+%\usepackage{floatrow}
+%espacement entre les lignes
+\usepackage{setspace}
+%modifier la mise en page de l'abstract
+\usepackage{abstract}
+%police et mise en page (marges) du document
+\usepackage[T1]{fontenc}
+\usepackage[top=2.5cm, bottom=3.5cm, left=3cm, right=3cm]{geometry}
+%Pour les galerie d'images
+\usepackage{subfig}
+
+%====================== INFORMATION ET REGLES ======================
+
+%rajouter les numérotation pour les \paragraphe et \subparagraphe
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\hypersetup{							% Information sur le document
+pdfauthor = {Bastian Szczygielski},			% Auteurs
+pdftitle = {API de génération de tests automatique de fichier HTML/SQL/PHP},			% Titre du document
+pdfsubject = {Mémoire de Projet},		% Sujet
+pdfkeywords = {Tag1, Tag2, Tag3, ...},	% Mots-clefs
+pdfstartview={FitH}}					% ajuste la page à la largueur de l'écran
+%pdfcreator = {MikTeX},% Logiciel qui a crée le document
+%pdfproducer = {}} % Société avec produit le logiciel
+
+%======================== DEBUT DU DOCUMENT ========================
+
+\begin{document}
+
+%régler l'espacement entre les lignes
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+%page de garde
+\input{./title.tex}
+
+\setcounter{page}{1}
+\input{./remerciements.tex}
+
+\shorttoc{Sommaire}{1}
+
+%espacement entre les lignes d'un tableau
+\renewcommand{\arraystretch}{1.5}
+
+%====================== INCLUSION DES PARTIES ======================
+
+\newpage
+
+\input{./description.tex}
+
+\input{./presentation.tex}
+
+\input{./mission.tex}
+
+\input{./bilan.tex}
+
+\input{./webographie.tex}
+
+\tableofcontents
+
+\input{./annexe.tex}
+
+\end{document}

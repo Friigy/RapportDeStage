@@ -1,0 +1,30 @@
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Large}
+
+\chapter{Bilan}
+
+\section{Résultats}
+
+À l'heure actuel, l'API est encore loin d'être finie. Elle a une base solide sur laquelle je pourrais rapidement terminer le premier objectif de la mission, c'est-à-dire l'API HTML, puis commencer à attaquer les deux autres objectifs en commençant par le SQL. Ce premier objectif a servi à créer une fondation stable et une logique solide pour la suite de la mission, mais aussi à apprendre à réapprendre ce que l'on sait dans le cadre de pouvoir avoir une meilleure vision d'ensemble quant il s'agit de créer un outil qui va servir à des gens qui n'ont pas encore de niveau sur le langage sélectionné.\\
+
+L'API n'est pas encore intégrable car il y a encore un travail d'intégration à faire avec l’équipe derrière la plate-forme C.A.T. pour que l'API soit utilisable dans les meilleures conditions. Je m'attend à ce qu'il y ait de la réécriture de code à faire, mais ayant bien divisé les fonctions qui génèrent, exécutent ou analysent, la charge de travail sera moins lourde que si le code était mal agencé.\\
+
+Il reste encore à définir des tests qui semble important, mais il s'agit de copie de tests déjà pensés et/ou écrits. À cet égard, je prévois déjà un refactoring de certains bouts de code dont les similarités sont visibles. Ce refactoring n'est pour le moment pas intéressant à effectuer vu la charge de travail et aussi dû au fait que des variables de classes différentes sont utilisées dans ces bouts de code. Repenser ces fragments n'est donc pas la priorité mais reste néanmoins un exercice intéressant à la conclusion de cet objectif.\\
+
+Des tests de non-régression sont aussi envisagés dans le futur suite à l’expérience acquise lors de la réalisation de la plate-forme elle-même, qui à l'ajout de fonctionnalités ou changement quelconque tombe en panne. Un groupe d’étudiant travaille activement sur cette problématique cette année pour réparer les failles dans l'application.\\
+
+\section{Conclusion}
+
+Je tiens tout d'abord à remercier M. Delbot pour m'avoir offert cette opportunité de travailler sur un projet comme celui-ci, sans lui je n'aurai probablement pas eu de mission à réaliser cette année. Le support qu'il m'a apporté durant ma recherche a aussi été une grande aide, même malgré les entretiens que j'ai obtenu grâce à lui qui n'ont pas porté fruit.\\
+
+Lors ce qu'il m'a proposé cette mission, j'ai su qu'il allait s'agir d'un projet intéressant et enrichissant. Durant ce projet, j'ai eu à changer de point de vue à maintes reprises pour vraiment appréhender l'ampleur du sujet et l'identité ainsi que les compétences des personnes pour qui cette API était dédié. Cela m'a permis de vraiment apprécié l'effort des enseignants lorsqu'ils travaillent à communiquer le savoir qu'ils ont acquis de tel manière à ce que les gens en face d'eux, aussi diverses qu'ils soient, puissent en retenir quelque chose de nouveau qui plus tard leur servirait peut-être à quelque chose.\\
+
+J'aurai aimé voir l'efficacité d'autres outils pour parser l'HTML, comme BeautifulSoup, dont j'ai évalué la complexité pas nécessaire dans le cadre de cette API. Par contrainte de temps, je me suis lancé avec HTMLParser. Il n'est cependant pas impossible de changer de parser en cours de développement ou même encore plus tard après le déploiement ayant séparer le parser de l'API. Il est tout à fait possible de changer de parser en cours de déploiement afin de tester l’efficacité d'autre parser.\\
+
+\section{Perspectives futures}
+
+L'API étant loin d’être terminé, il reste encore du travail a réalisé sur le premier objectif. Ce travail est cependant moins laborieux que la mise en place du parser et de l'API puisqu'il ne s'agit que d'écrire d'avantage de test sur des balises pas encore tester.\\
+
+Le prochain objectif est de travailler sur le SQL. Un premier exercice de pensé dessus nous ramène à la même philosophie que le premier objectif. Parser le fichier, l'analyser et générer des tests selon les éléments trouvé au sein du script SQL. On peut d'ores de déjà imaginé des tests tel que vérifier la validité d'un script SQL selon si elle renvoie ou ajoute des données de manières correctes ou encore s'assurer que les raccourcis sur les noms table sont correctement utilisés.\\
+
+Il n'y a pas encore de réflexion faites sur le PHP qui je pense sera la partie de la mission qui demandera plus d'attention lorsqu'il s'agira d'en regarder la structure ou l'exécution. C'est une discussion qu'il faudra avoir dans le futur pour mieux definir ce qu'on attend de l'API lorsqu'il s'agira de générer des tests sur ce langage.\\
